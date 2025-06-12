@@ -1,0 +1,85 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, sans-serif;
+  color: #1a1f36;
+}
+
+body {
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Container for login page */
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
+  background-color: #ffffff;
+}
+
+/* Heading */
+.login-page h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
+}
+
+/* Login form styling */
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 6px;
+  box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px,
+              rgba(0, 0, 0, 0.12) 0px 3px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input fields */
+.login-form input {
+  font-size: 16px;
+  padding: 10px 14px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: rgba(60, 66, 87, 0.1) 0px 0px 0px 1px;
+  outline: none;
+}
+
+.login-form input:focus {
+  outline: 2px solid rgba(84, 105, 212, 0.5);
+}
+
+/* Submit button */
+.login-form button {
+  background-color: rgb(84, 105, 212);
+  color: white;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-form button:hover {
+  background-color: rgb(65, 80, 180);
+}
+
+/* Error message */
+.error-msg {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: -10px;
+}
